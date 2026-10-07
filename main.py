@@ -30,9 +30,10 @@ def main():
 
     print(len(my_classes) >= 4)
 
+    # searches for an item and returns the location if it is found 
     print(my_classes.index("Math"))
     # if the item is not present, it breaks our code 
-    #  print(my_classes.index("Journalism"))
+    #print(my_classes.index("Journalism"))
     
     # item in list -- returns a boolean 
     print("Math" in my_classes)
@@ -44,17 +45,20 @@ def main():
 
     # add items to a list in a specific spot with .insert(index, item)
     # when we use an index that is larger than the list, it will append to the end 
-    my_classes.insert(2, "Biology")
+    my_classes.insert(3, "Biology")
     print(my_classes)
+
+    # pop function returns the last item in our list, and removes it from the list 
     print(my_classes.pop())
     print(my_classes)
 
     # we can sort our lists to rearrange them 
     # for strings, sorts alphabetically 
-    print(my_classes.sort())
+    my_classes.sort()
     print(my_classes)
 
     numList = [6, -4, 3, 9]
+    # sort returns None 
     numList.sort()
     print(numList)
 
@@ -63,8 +67,9 @@ def main():
     print(my_classes)
     print(numList)
 
-    # make a copy of your list that is sorted with sorted()
-    print(sorted(my_classes, reverse=True))
+    # make a copy of your list that is sorted with sorted(list, reverse=False)
+    print(sorted(my_classes))
+    print(my_classes)
     sorted_classes = sorted(my_classes)
     print(sorted_classes)
 
